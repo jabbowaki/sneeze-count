@@ -1,0 +1,23 @@
+<head>
+  <script src="https://fb.me/react-0.13.3.js"></script>
+  <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+</head>
+<body>
+</body>
+
+<script type='text/jsx'>
+  //define a class
+  var SneezeTitle = React.createClass({
+    render: function() {
+      return <div>
+          I sneeze a lot
+        </div>
+    }
+  });
+
+  //render the class
+  var element = React.createElement(SneezeTitle);
+
+  //when done,please place in body
+  React.render(element, document.body);
+</script>
