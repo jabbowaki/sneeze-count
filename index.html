@@ -1,23 +1,30 @@
+<!DOCTYPE HTML>
 <head>
   <script src="https://fb.me/react-0.13.3.js"></script>
   <script src="https://fb.me/JSXTransformer-0.13.3.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <title>
+    Sneeze Count
+  </title>
 </head>
 <body>
+  Sneeze Count:
 </body>
 
 <script type='text/jsx'>
   //define a class
-  var SneezeTitle = React.createClass({
+  var Button = React.createClass({
     render: function() {
-      return <div>
-          I sneeze a lot
-        </div>
+      return <button className="btn btn-primary" type="button">
+        I sneezed
+      </button>
     }
   });
 
   //render the class
-  var element = React.createElement(SneezeTitle);
+  var element = React.createElement(Button);
 
   //when done,please place in body
   React.render(element, document.body);
 </script>
+</html>
